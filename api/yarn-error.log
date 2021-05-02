@@ -1,0 +1,47 @@
+Arguments: 
+  /home/romanm/.nvm/versions/node/v14.15.2/bin/node /home/romanm/.nvm/versions/node/v14.15.2/bin/yarn add apollo-server-express express lowdb @types/lowdb jsonwebtoken bcryptjs concurrently cors typescript dotenv faker ts-node nodemon @types/faker @types/express @types/cors @types/bryptjs @types/node
+
+PATH: 
+  /home/romanm/Android/Sdk/platform-tools:/home/romanm/Android/Sdk/tools/bin:/home/romanm/Android/Sdk/tools:/home/romanm/Android/Sdk/emulator:/home/romanm/.config/composer/vendor/bin:/home/romanm/.deno/bin:/home/romanm/.rbenv/shims:/home/romanm/.rbenv/versions/2.7.2/bin:/home/romanm/.rbenv/plugins/ruby-build/bin:/home/romanm/.rbenv/bin:/home/romanm/bin:/home/romanm/.nvm/versions/node/v14.15.2/bin:/home/romanm/.cargo/bin:/home/romanm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/romanm/.cache/zsh4humans/v4/fzf/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fbryptjs: Not found
+      at Request.params.callback [as _callback] (/home/romanm/.nvm/versions/node/v14.15.2/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/home/romanm/.nvm/versions/node/v14.15.2/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/home/romanm/.nvm/versions/node/v14.15.2/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/home/romanm/.nvm/versions/node/v14.15.2/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Roman Munar",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
