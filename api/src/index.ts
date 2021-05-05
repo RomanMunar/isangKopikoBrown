@@ -1,10 +1,31 @@
 import { ApolloServer } from 'apollo-server-express'
 import express from 'express'
-import { typeDefs, resolvers } from './graphql2'
-const app = express()
+import { typeDefs, resolvers } from './graphql'
+import passport from 'passport'
+import cors from 'cors'
+import { getUserFromToken } from './models'
+
 require('dotenv')
 
-const server = new ApolloServer({ typeDefs, resolvers })
+const app = express()
+
+app.use(cors({ allowedHeaders: '*', origin: '*' }))
+app.use(passport.initialize())
+app.use(passport.session())
+
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  context: ({ req }) => {
+    const token = req.headers.authorization || ''
+    // Try to retrieve a user with the token
+    console.log({ token })
+    const user = getUserFromToken(token)
+    console.log({ user })
+    // Add the user to the context
+    return { user }
+  },
+})
 
 server.applyMiddleware({ app })
 
