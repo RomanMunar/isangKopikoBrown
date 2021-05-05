@@ -1,0 +1,7 @@
+export type { default as ICategory } from './Category'
+export type { default as ICustomer } from './Customer'
+export type { default as IGift } from './Gift'
+export type { default as IOrder } from './Order'
+export type { default as IProduct } from './Product'
+export type { default as IUser } from './User'
+export type { default as IVendor } from './Vendor'

@@ -5,6 +5,7 @@
   "dependencies": {
     "@apollo/client": "^3.3.16",
     "@craco/craco": "^6.1.2",
+    "@graphql-codegen/cli": "^1.21.4",
     "@graphql-codegen/typescript-react-apollo": "^2.2.4",
     "@hookform/resolvers": "^2.4.0",
     "@tailwindcss/jit": "^0.1.18",
@@ -15,12 +16,16 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-dropzone": "^5.1.0",
     "@types/react-router-dom": "^5.1.7",
     "autoprefixer": "^9",
+    "clsx": "^1.1.1",
     "graphql": "^15.5.0",
+    "keen-slider": "^5.4.0",
     "postcss": "^7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-dropzone": "^11.3.2",
     "react-hook-form": "^7.3.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -31,10 +36,11 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "gql:generate": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +59,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@graphql-codegen/typescript-react-apollo": "2.2.4",
+    "@graphql-codegen/typescript": "1.22.0",
+    "@graphql-codegen/typescript-operations": "1.17.16",
+    "@graphql-codegen/introspection": "1.18.2",
+    "@graphql-codegen/cli": "1.21.4"
   }
 }

@@ -1,0 +1,7 @@
+export { default as MenuIcon } from './menuIcon'
+export { default as DashboardIcon } from './dashboardIcon'
+export { default as OrderIcon } from './orderIcon'
+export { default as GiftIcon } from './giftIcon'
+export { default as CashIcon } from './cashIcon'
+export { default as BellIcon } from './bellIcon'
+export { default as ChevronIcon } from './chevronIcon'
